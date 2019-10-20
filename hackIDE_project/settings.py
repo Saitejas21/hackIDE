@@ -45,14 +45,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE_CLASSES = [
-    # 'django.middleware.security.SecurityMiddleware',
-    # 'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    # 'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-    # 'django.contrib.messages.middleware.MessageMiddleware',
+     'django.contrib.auth.middleware.AuthenticationMiddleware',
+     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'hackIDE_project.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+ https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
     'default': {
